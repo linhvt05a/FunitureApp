@@ -4,26 +4,36 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import { ButtonStyle, HeaderBar, SearchBar } from '../components'
 import { FONTS } from '../constants';
 import AllCheck from '../assets/icons/icons8-check-all.svg'
+import { RNCamera} from 'react-native-camera'
 // create a component
 const Home = () => {
     function renderTitle() {
         return (
             <View style={styles.viewTitle}>
-                <Text style={{ ...FONTS.body1 }}>Nội thất tốt</Text>
-                <Text style={{ ...FONTS.body2 }}>Hốt liền tay</Text>
-               <TouchableOpacity>
-                    <AllCheck width={20} height={40}/>
-               </TouchableOpacity>
+                <Text style={{ ...FONTS.largeTitle }}>Nội thất tốt</Text>
+                <Text style={{ ...FONTS.h1 }}>Hốt liền tay!</Text>
             </View>
         )
     }
 
-    function renderCategories(){
+    function renderCategories() {
         return (
             <ScrollView horizontal contentContainerStyle={styles.viewCate}>
                 {ButtonStyle("sdsfsfsdfsdfsdfsdfs")}
-                
             </ScrollView>
+        )
+    }
+
+    function renderCamera() {
+        return (
+            <View style={styles.container}>
+                <RNCamera
+                    style={{ flex: 1, alignItems: 'center' }}
+                    ref={ref => {
+                        this.camera = ref
+                    }}
+                />
+            </View>
         )
     }
 
@@ -33,6 +43,7 @@ const Home = () => {
             {renderTitle()}
             <SearchBar />
             {renderCategories()}
+            {renderCamera()}
         </ScrollView>
     );
 };
@@ -42,7 +53,7 @@ const styles = StyleSheet.create({
     container: {
 
     },
-    viewCate:{
+    viewCate: {
         marginTop: 60,
         left: 16
     },

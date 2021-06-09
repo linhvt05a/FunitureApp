@@ -1,15 +1,21 @@
 //import liraries
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, Image } from 'react-native';
-import { images, icons } from '../constants'
+import { images, icons, FONTS } from '../constants'
 // create a component
 const HeaderBar = () => {
     return (
         <SafeAreaView>
             <View style={styles.container}>
-                <TouchableOpacity style={styles.userBtn}>
-                    <Image source={images.userImage} style={styles.userImage} />
-                </TouchableOpacity>
+                <View style={styles.viewUser}>
+                    <TouchableOpacity style={styles.userBtn}>
+                        <Image source={images.userImage} style={styles.userImage} />
+                    </TouchableOpacity>
+                    <View style={styles.viewWelcome}>
+                        <Text style={{...FONTS.h4}}>Xin chao !</Text>
+                        <Text style={{...FONTS.body5}}>Hoang Linh</Text>
+                    </View>
+                </View>
                 <View style={styles.viewIcon}>
                     <TouchableOpacity style={styles.cartBtn}>
                         <Image source={icons.shoppingCart} style={styles.cartIcon} />
@@ -25,6 +31,10 @@ const HeaderBar = () => {
 
 // define your styles
 const styles = StyleSheet.create({
+    viewWelcome:{
+        left: 20,
+    },
+    viewUser:{flexDirection: 'row'},
     userBtn: {left: 16},
     cartBtn: {},
     notiBtn: {},

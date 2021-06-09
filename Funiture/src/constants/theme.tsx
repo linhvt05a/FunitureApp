@@ -21,7 +21,7 @@ export const SIZE = {
     h1:30,
     h2: 22,
     h3: 20,
-    h4: 18,
+    h4: 16,
     body1: 30,
     body2: 20,
     body3: 16,
@@ -33,18 +33,18 @@ export const SIZE = {
 }
 
 export const FONTS = {
-    largeTitle :{fontFamily:"Robo-medium",fontSize: SIZE.largeTitle, lineHeight: 50},
+    largeTitle :{fontFamily:"Roboto-Black",fontSize: SIZE.largeTitle, lineHeight: 50},
 
-    h1 :{fontFamily:"",fontSize: SIZE.h1, lineHeight: 36},
-    h2 :{fontFamily:"",fontSize: SIZE.h2, lineHeight: 30},
-    h3 :{fontFamily:"",fontSize: SIZE.h3, lineHeight: 22},
-    h4 :{fontFamily:"",fontSize: SIZE.h4, lineHeight: 22},
+    h1 :{fontFamily:"Roboto-Regular",fontSize: SIZE.h1, lineHeight: 36},
+    h2 :{fontFamily:"Roboto-Regular",fontSize: SIZE.h2, lineHeight: 30},
+    h3 :{fontFamily:"Roboto-Regular",fontSize: SIZE.h3, lineHeight: 22},
+    h4 :{fontFamily:"Roboto-BoldItalic",fontSize: SIZE.h4, lineHeight: 22},
 
-    body1 :{fontFamily:"",fontSize: SIZE.body1, lineHeight: 36},
-    body2 :{fontFamily:"",fontSize: SIZE.body2, lineHeight: 30},
-    body3 :{fontFamily:"",fontSize: SIZE.body3, lineHeight: 22},
-    body4 :{fontFamily:"",fontSize: SIZE.body4, lineHeight: 22},
-    body5 :{fontFamily:"",fontSize: SIZE.body5, lineHeight: 22},
+    body1 :{fontFamily:"Roboto-Regular",fontSize: SIZE.body1, lineHeight: 36},
+    body2 :{fontFamily:"Roboto-Regular",fontSize: SIZE.body2, lineHeight: 30},
+    body3 :{fontFamily:"Roboto-Regular",fontSize: SIZE.body3, lineHeight: 22},
+    body4 :{fontFamily:"Roboto-Regular",fontSize: SIZE.body4, lineHeight: 22},
+    body5 :{fontFamily:"Roboto-ThinItalic",fontSize: SIZE.body5, lineHeight: 22},
     
 }
 
